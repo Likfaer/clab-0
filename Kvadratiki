@@ -1,29 +1,26 @@
 #include <iostream>
 #include <cmath>
-using namespace std;
- 
+
 int main()
 {
     double a;
     double b;
     double c;
     double x;
-    cout << "Введите значение a: ";
+    cout << "Введите a,b,c: ";
     cin >> a;
-    cout << "Введите значение b: ";
     cin >> b;
-    cout << "Введите значение c: ";
     cin >> c;
-    if((b*b - 4*a*c) >= 0) //Если дискриминант больше или равен 0
+    if((b*b - 4*a*c) >= 0)
     {
         x = ( -1*b + sqrt(b*b - 4*a*c) ) / (2 * a);
-        cout << "Первый корень равен " << x << endl;
+        cout << "X1: " << x << endl;
         x = ( -1*b - sqrt(b*b - 4*a*c) ) / (2 * a);
-        cout << "Второй корень равен " << x << endl;
+        cout << "X2: " << x << endl;
     }
     else
     {
-        cout << "Дискриминант меньше 0, корни невещественные." << endl;
+        cout << "Дискриминант < 0, корни отсутствуют" << endl;
     }
  
     return 0;
