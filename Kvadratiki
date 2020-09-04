@@ -1,26 +1,25 @@
 #include <iostream>
 #include <cmath>
-
+using namespace std;
+ 
 int main()
 {
     double a;
     double b;
     double c;
     double x;
-    cout << "Введите a,b,c: ";
-    cin >> a;
-    cin >> b;
-    cin >> c;
+    cout << "Введите значения a,b,c: \n";
     if((b*b - 4*a*c) >= 0)
     {
+       cout << "D =" << b*b-4*a*c << endl;
         x = ( -1*b + sqrt(b*b - 4*a*c) ) / (2 * a);
-        cout << "X1: " << x << endl;
+        cout << "X1 = " << x << endl;
         x = ( -1*b - sqrt(b*b - 4*a*c) ) / (2 * a);
-        cout << "X2: " << x << endl;
+        cout << "X2 =  " << x << endl;
     }
     else
     {
-        cout << "Дискриминант < 0, корни отсутствуют" << endl;
+        cout << "Дискриминант меньше 0" << endl;
     }
  
     return 0;
