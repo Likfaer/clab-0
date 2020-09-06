@@ -9,6 +9,9 @@ int main()
     double c;
     double x;
     cout << "Введите значения a,b,c: \n";
+    cin >> a;
+    cin >> b;
+    cin >> c;
     if((b*b - 4*a*c) >= 0)
     {
        cout << "D =" << b*b-4*a*c << endl;
